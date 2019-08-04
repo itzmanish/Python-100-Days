@@ -11,7 +11,10 @@ import random
 @unique
 class Suite(Enum):
     """花色（枚举）"""
-    SPADE, HEART, CLUB, DIAMOND = range(4)
+    SPADE = 0
+    HEART = 1
+    CLUB = 2
+    DIAMOND = 3
 
     def __lt__(self, other):
         return self.value < other.value
